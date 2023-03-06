@@ -1,0 +1,222 @@
+body{
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    min-height: 100%;
+    background-color: #DEE7FD;
+}
+.header{
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    background-color: #A1B9C4;
+    position: absolute;
+}  
+ul.slides{
+    position: relative;
+    width: 850px;
+    height: 500px;
+    list-style: none;
+    margin: 0 0 0 75px;
+    padding: 0;
+    overflow: hidden;
+} 
+li.slide{
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    color: #fff;
+    transition: .5s transform ease-in-out;
+}
+li.slide img{
+    width: 784px;
+    height: 441px;
+    padding: 15px;
+    border: 6px solid;
+    border-color: #fff;
+    align-content: center;
+}
+.slide:nth-of-type(1){
+    /*background-color: #F2E205;*/
+}
+.slide:nth-of-type(2){
+    /*background-color: #F25C05;*/
+    left: 100%;
+}  
+.slide:nth-of-type(3){
+    /*background-color: #495F8C;*/
+    left: 200%;
+}  
+input[type="radio"]{
+    position: relative;
+    z-index: 100;
+    display: none;
+}  
+.controls-visible{
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}  
+.controls-visible label{
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 10%;
+    margin: 0 1px;
+    border: 1.5px solid #fff;
+} 
+.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1){
+    background-color: #A1B9C4;
+}
+.slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2){
+    background-color: #A1B9C4;
+}
+.slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3){
+    background-color: #A1B9C4;
+}
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slide{
+    transform: translatex(0%);
+}
+.slides input[type="radio"]:nth-of-type(2):checked ~ .slide{
+    transform: translatex(-100%);
+}
+.slides input[type="radio"]:nth-of-type(3):checked ~ .slide{
+    transform: translatex(-200%);
+}
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slides:nth-of-type(1){
+    display: flex;
+}
+.slides input[type="radio"]:nth-of-type(2):checked ~ .slides:nth-of-type(2){
+    display: flex;
+}
+.slides input[type="radio"]:nth-of-type(3):checked ~ .slides:nth-of-type(3){
+    display: flex;
+}
+
+.content{
+    width: 1150px;
+    height: auto;
+    align-content: center;
+    margin: 630px 0px 40px 150px;
+}
+.content img{
+    position:relative;
+    width: 300px;
+    height: 300px;
+    clip: rect(0px,300px,300px,0px);
+    object-fit: cover;
+    transition:0.6s ease-in;
+    margin: 5px;
+    padding: 10px;
+    border: 6px solid;
+    border-color: #fff;
+    align-content: center;
+}
+.senior1-1:hover{
+    width: 270px;
+    height:480px;
+}
+.senior1-2:hover{
+    width: 480px;
+    height: 270px;
+}
+.senior1-3:hover{
+    width: 400px;
+    height: 300px;
+}
+.senior1-4:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-5:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-6:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-7:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-8:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-9:hover{
+    width: 350px;
+    height: 350px;
+}
+.senior1-10:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-11:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-12:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-13:hover{
+    width: 400px;
+    height: 300px;
+}
+.senior1-14:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-15:hover{
+    width: 400px;
+    height: 300px;
+}
+.senior1-16:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-17:hover{
+    width: 480px;
+    height: 270px;
+}
+.senior1-18:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-19:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-20:hover{
+    width: 480px;
+    height: 270px;
+}
+.senior1-21:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-22:hover{
+    width: 480px;
+    height: 270px;
+}
+.senior1-23:hover{
+    width: 300px;
+    height: 400px;
+}
+.senior1-24:hover{
+    width: 300px;
+    height: 400px;
+}
