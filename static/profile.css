@@ -1,0 +1,289 @@
+html{
+  background-color: #DEE7FD;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+/*body{
+  font-family: popins;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position:center center;
+  height: 100vh;
+
+}*/
+.nav{
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0px; /*指定偏差*/
+}
+.logo img{
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+}
+.nav ul{
+  list-style: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; /*橫排*/
+}
+.nav ul li{
+  width: 175px;
+}
+.nav ul li a{
+  height: 80px;
+  text-decoration: none;
+  color: #29395D;
+  padding: 3rem;
+  font-weight: bold;
+  transition: all .5s ease;
+  position: relative;
+}
+.nav ul li a:hover{ /*hover 滑鼠移到元素上時*/
+  color: #fff;
+}
+.header{
+  background: none;
+  overflow: hidden;
+}
+.nav{
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  align-items: center;
+  margin: auto;
+}
+.information{
+  width: 1150px;
+  height: 800px;
+  margin: auto;
+  align-content: center;
+}
+.info{
+  width: 40%;
+  height: auto;
+  margin: 3%;
+  display: inline-block;
+  align-content: center;
+}
+/*垂直線*/
+.line{
+  width: 0.3%;
+  height: 80%;
+  margin: 3%;
+  display: inline-block;
+  align-content: center;
+}
+.line hr{
+  width: 100%;
+  height: 100%;
+  border-width: 0px;
+  background-color:#29395D;
+  margin: auto;
+}
+.introduction{
+  width: 40%;
+  height: auto;
+  margin: 3%;
+  display: inline-block;
+  align-content: center;
+}
+.introduction-1{
+  width: auto;
+  height: auto;
+  line-height: 50px;
+  text-align: center;
+}
+/*experiment 區塊*/
+.exp{
+  width: 1050px;
+  height: auto;
+  align-content: center;
+}
+.exp img{
+  width: 890px;
+  height: 150px;
+  margin: 0px 0px 0px 250px;
+}
+.experiment{
+  width: 1150px;
+  height: 400px;
+  margin: auto;
+  align-content: center;
+  /*background-image: url('/static/1.png')*/
+  /*background-color: #fff;*/
+}
+.experiment img{
+  width: 100%;
+  height: 300px;
+}
+.slides{
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  display: inline-block;
+  align-content: center;
+  background-color: #fff;
+}
+.slides img{
+  width: 290px;
+  height: 290px;
+  padding: 10px;
+  position: absolute;
+  clip: rect(0px,290px,290px,0px);
+  object-fit: cover;
+}
+/*see more*/
+.slides:hover .detail{
+  right: 0%;
+}
+.slides{
+  position: relative;
+  overflow: hidden;
+}
+.detail{
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+}
+.detail h2{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.slides:hover img{
+  transform: scale(1.03); /*放大*/
+}
+.detail h2 a{
+  text-decoration: none; /*不要底線*/
+  color: #29395D;
+  padding: 0px 6px 0px 6px;
+  border-radius: 14px;
+  font-weight: bold;
+  transition: all 0.5s ease; /*轉場*/
+  position: relative;
+  background-color: #DEE7FD;
+  opacity: 0.9; /*透明度*/
+}
+.detail h2 a:hover{
+  color: #fff;
+  background-color: #29395D;
+  opacity: 0.9;
+}
+/*life*/
+.life{
+  width: 1110px;
+  height: 800px;
+  margin: auto;
+  align-content: center;
+}
+.life img{
+  width: 100%;
+  height: 300px;
+}
+.senior{
+  width: 420px;
+  height: 320px;
+  margin: 50px;
+  display: inline-block;
+  background-color: #fff;
+}
+.college{
+  width: 420px;
+  height: 320px;
+  margin: 50px;
+  display: inline-block;
+  background-color: #fff;
+}
+.senior img{
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+}
+.college img{
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+}
+.senior:hover .detail{
+  right: 0%;
+}
+.college:hover .detail{
+  right: 0%;
+}
+.senior{
+  position: relative;
+  overflow: hidden;
+}
+.college{
+  position: relative;
+  overflow: hidden;
+}
+.senior:hover img{
+  transform: scale(1.03);
+}
+.college:hover img{
+  transform: scale(1.03);
+}
+.introduction-1{
+  width: 90%;
+  height: 600px;
+  max-width: 500px;
+  margin: 50px;
+  padding: 20px;
+  background-color: #A1B9C4;
+  border-radius: 5px;
+}
+.contact{
+  width: 90%;
+  max-width: 500px;
+  margin: 50px 50px 100px 420px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: #A1B9C4;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.form-group{
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea{
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid reba(128, 128, 128, 0.199);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+textarea{
+  resize: vertical;
+}
+button{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 28px;
+  border-radius: 8px;
+  color: #29395D;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s ease background-color;
+}
+button[type="submit"]:hover{
+  backgroud-color:#fff
+}
