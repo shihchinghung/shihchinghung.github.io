@@ -5,6 +5,7 @@
         <link rel = "stylesheet" href = "/static/profile.css">
         <meta charset = "UTF-8">
     </head>
+    
     <body>
         <div class = "header">
             <div class = "nav">
@@ -65,26 +66,23 @@
             <img src = "/static/experiment.png" alt = "exp">
         </div>
         <div class = "experiment">
-            <div class = "ramen">
-                <img src = "/static/ramen.png" alt = "ramen">
+            <div class="slides">
+                <img class="slide" src = "/static/ramen.png">
+                <img class="slide" src = "/static/wg.gif">
+                <img class="slide" src = "/static/lf.png">
+                <img class="slide" src = "/static/qci.png">
                 <div class = "detail">
-                    <h2><font color = "#29395D" face = "serif"><a href = "ramen.html">see more</a></font></h2>
+                    <h2><font color = "#29395D" face = "serif"><a href = "parttime.html">see more</a></font></h2>
                 </div>
             </div>
-            <div class = "wg">
-                <img src = "/static/wg.gif" alt = "wg">
-                <div class = "detail">
-                    <h2><font color = "#29395D" face = "serif"><a href = "wg.html">see more</a></font></h2>
-                </div>
-            </div>
-            <div class = "program">
-                <img src = "/static/program.png" alt = "program">
+            <div class="slides">
+                <img class="slide2" src = "/static/program.png">
                 <div class = "detail">
                     <h2><font color = "#29395D" face = "serif"><a href = "program.html">see more</a></font></h2>
                 </div>
             </div>
-            <div class = "piano">
-                <img src = "/static/piano.png" alt = "piano">
+            <div class="slides">
+                <img class="slide3" src = "/static/piano.png">
                 <div class = "detail">
                     <h2><font color = "#29395D" face = "serif"><a href = "piano.html">see more</a></font></h2>
                 </div>
@@ -124,9 +122,9 @@
             </form>
         </div>
         <br><br><br>
-        
-        <!--滑動至指定頁面-->
+
         <script>
+            //滑動至指定頁面
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -136,6 +134,21 @@
                     });
                 });
             });
+            //幻燈片
+            var myIndex = 0;
+            carousel();
+
+            function carousel(){
+                var i;
+                var x = document.getElementsByClassName("slide");
+                for(i = 0;i < x.length;i++){
+                x[i].style.display = "none";  
+                }
+                myIndex++;
+                if(myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 3000); // Change image every 3s
+            }
         </script>
     </body>
 </html>
