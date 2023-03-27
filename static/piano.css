@@ -208,3 +208,18 @@ html{
 .espanol:hover img{
     transform: scale(1.03);
 }
+.reflection{
+    width: 610px;
+    height: auto;
+    padding: 10px;
+    border: 6px solid;
+    border-color: #fff;
+    margin: 10px 10px 10px 400px;
+    text-align: center;
+}
+.reflection2{
+    width: 600px;
+    height: auto;
+    line-height: 50px; /*行距*/
+    text-align: center;
+}
