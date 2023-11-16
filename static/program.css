@@ -5,14 +5,24 @@ body{
     min-height: 100%;
     background-color: #DEE7FD;
 }
-.content_main{
+.header{
     width: 1000px;
-    height: 400px;
+    height: 300px;
     margin: auto;
     align-content: center;
     text-align: center;
     background-color: #A1B9C4;
-    position: absolute;
+}
+.header img{
+    width: 495px;
+    height: 330px;
+    margin: 20px 255px 10px 230px;
+    padding: 10px;
+    border: 6px solid;
+    border-color: #fff;
+    clip: rect(0px,480px,270px,0px);
+    object-fit: cover;
+    align-content: center;
 }  
 ul.slides{
     position: relative;
